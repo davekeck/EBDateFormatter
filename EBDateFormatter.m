@@ -43,7 +43,7 @@
         EBAssertOrRecover((uintmax_t)timeZoneIDLength <= (uintmax_t)EBMaxSignedVal(unicodeTimeZoneIDLength), return nil);
     unicodeTimeZoneIDLength = timeZoneIDLength;
     
-    /* Finally create our UDateFormat object! */
+    /* ## Create our UDateFormat object! */
     UErrorCode openStatus = U_ZERO_ERROR;
     _dateFormat = udat_open(UDAT_NONE, UDAT_NONE, cLocaleIdentifier, unicodeTimeZoneID, unicodeTimeZoneIDLength, nil, 0, &openStatus);
         EBAssertOrRecover(_dateFormat, return nil);
