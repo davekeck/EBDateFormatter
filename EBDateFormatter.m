@@ -41,7 +41,7 @@
     int32_t unicodeTimeZoneIDLength = 0;
         /* Verify that 'timeZoneIDLength' can safely fit into 'unicodeTimeZoneIDLength'. */
         EBAssertOrRecover((uintmax_t)timeZoneIDLength <= (uintmax_t)EBMaxSignedVal(unicodeTimeZoneIDLength), return nil);
-    unicodeTimeZoneIDLength = timeZoneIDLength;
+    unicodeTimeZoneIDLength = (int32_t)timeZoneIDLength;
     
     /* ## Create our UDateFormat object! */
     UErrorCode openStatus = U_ZERO_ERROR;
@@ -57,7 +57,7 @@
     int32_t unicodeFormatLength = 0;
         /* Verify that 'formatLength' can safely fit into 'unicodeFormatLength'. */
         EBAssertOrRecover((uintmax_t)formatLength <= (uintmax_t)EBMaxSignedVal(unicodeFormatLength), return nil);
-    unicodeFormatLength = formatLength;
+    unicodeFormatLength = (int32_t)formatLength;
     
     /* We're using this udat_applyPattern() function (instead of supplying the pattern to udat_open()) because there's no public
        UDateFormatStyle constant allowing us to specify that we want to use a pattern for the formatter. (See arguments 0 and 1
@@ -109,7 +109,7 @@
     int32_t unicodeDateStringLength = 0;
         /* Verify that 'dateStringLength' can safely fit into 'unicodeDateStringLength'. */
         EBAssertOrRecover((uintmax_t)dateStringLength <= (uintmax_t)EBMaxSignedVal(unicodeDateStringLength), return nil);
-    unicodeDateStringLength = dateStringLength;
+    unicodeDateStringLength = (int32_t)dateStringLength;
     
     UErrorCode parseStatus = U_ZERO_ERROR;
     UDate parseResult = udat_parse(_dateFormat, unicodeDateString, unicodeDateStringLength, nil, &parseStatus);
