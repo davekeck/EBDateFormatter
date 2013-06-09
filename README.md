@@ -12,5 +12,9 @@ EBDateFormatter is useful as a replacement for NSDateFormatter due to its thread
 ## Integration
 
 1. Integrate [EBFoundation](https://github.com/davekeck/EBFoundation) into your project.
-2. Link against libicucore.
-3. Add the source files to your project.
+2. Drag EBDateFormatter.xcodeproj into your project's file hierarchy.
+3. In your target's "Build Phases" tab:
+    * Add EBDateFormatter as a dependency ("Target Dependencies" section)
+    * Link against EBDateFormatter ("Link Binary With Libraries" section)
+    * Link against libicucore ("Link Binary With Libraries" section)
+4. Add `#import <EchoBravo/EBDateFormatter.h>` to your source files.
