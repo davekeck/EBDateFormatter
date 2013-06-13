@@ -17,4 +17,4 @@ EBDateFormatter is useful as a replacement for NSDateFormatter due to its thread
     * Add EBDateFormatter as a dependency ("Target Dependencies" section)
     * Link against EBDateFormatter ("Link Binary With Libraries" section)
     * Link against libicucore ("Link Binary With Libraries" section)
-4. Add `#import <EchoBravo/EBDateFormatter.h>` to your source files.
+4. Add `#import <EBDateFormatter/EBDateFormatter.h>` to your source files.

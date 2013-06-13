@@ -1,5 +1,5 @@
 #import "EBDateFormatter.h"
-#import <EchoBravo/EBFoundation.h>
+#import <EBFoundation/EBFoundation.h>
 #import "unicode/udat.h"
 
 @implementation EBDateFormatter
