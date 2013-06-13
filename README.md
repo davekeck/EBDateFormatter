@@ -7,7 +7,6 @@ EBDateFormatter is useful as a replacement for NSDateFormatter due to its thread
 ## Requirements
 
 - Mac OS 10.8 or iOS 6. (Earlier platforms have not been tested.)
-- Automatic reference counting (ARC) must be enabled for the source files.
 
 ## Integration
 
