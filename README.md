@@ -17,3 +17,11 @@ EBDateFormatter is useful as a replacement for NSDateFormatter due to its thread
     * Link against libEBDateFormatter.a ("Link Binary With Libraries" section)
     * Link against libicucore.dylib
 4. Add `#import <EBDateFormatter/EBDateFormatter.h>` to your source files.
+
+## Credits
+
+EBDateFormatter was created for [Lasso](http://las.so).
+
+## License
+
+EBDateFormatter is available under the MIT license; see the LICENSE file for more information.
